@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>HTML Form</h1>
+    <br />
+    <h2>Login form</h2>
+    <form action="/">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="enter you name" />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter you email"
+        />
+      </p>
+      <p>
+        <label for="mobile">Mobile</label>
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          placeholder="enter you mobile number"
+        />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enter you password"
+        />
+      </p>
+      <p>
+        <input type="checkbox" name="checkbox" id="checkbox" required /><label
+          for="checkbox"
+          >You are agree with our <a href="/">terms and condition</a>
+        </label>
+      </p>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+    <h3></h3>
+    <div>
+      <h2>youtube</h2>
+      <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" />
+        <button>Search on youtube</button>
+      </form>
+      <h2>flipcart</h2>
+      <form action="https://www.flipkart.com/search">
+        <label for="search">flipcart Search</label>
+        <input id="search" type="text" name="q" />
+        <button>Search on flipcart</button>
+      </form>
+      <h2>Google</h2>
+      <form action="https://www.google.com/search">
+        <label for="search2">Google Search</label>
+        <input id="search2" type="text" name="q" />
+        <button>Search on Google</button>
+      </form>
+      <h2>Amazon</h2>
+      <form action="https://www.amazon.com/s">
+        <label for="search3">Amazon Search</label>
+        <input id="search3" type="text" name="k" />
+        <button>Search on Amazon</button>
+      </form>
+      <br />
+      <h2>My Form</h2>
+      <form action="/">
+        <input type="text" placeholder="Enter you name" required />
+        <input
+          required
+          type="password"
+          placeholder="Enter Your PassWord"
+          minlength="6"
+          maxlength="8"
+        />
+        <br />
+        <input type="number" min="5" max="10" required />
+        <button>Submit</button>
+      </form>
+      <br />
+    </div>
+  </body>
+</html>
